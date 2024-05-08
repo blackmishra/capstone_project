@@ -1,12 +1,13 @@
 from django.urls import path
 from django.views.generic import TemplateView
+from api import views
 
 urlpatterns = [
-    path("", TemplateView.as_view(template_name="index.html"), name='home'),
-    path("autovc/", TemplateView.as_view(template_name="autovc.html"), name='autovc'),
-    path("starGan/", TemplateView.as_view(template_name="starGan.html"), name='starGan'),
-    path("knn/", TemplateView.as_view(template_name="knn.html"), name='knn'),
-    path("results/", TemplateView.as_view(template_name="results.html"), name='results'),
+    path("", views.HomeView.as_view(), name='home'),
+    path("autovc/", views.AutoVCView.as_view(), name='autovc'),
+    path("starGan/", views.StarGanView.as_view(), name='starGan'),
+    path("knn/", views.kNNView.as_view(), name='knn'),
+    path("results/", views.ResultsView.as_view(), name='results'),
 
 
 ]
