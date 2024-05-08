@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1v=1@c40-6brb$8==xte5+atb=c6b72f7ao117^^rufs+r_x&='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -126,7 +126,7 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/assets/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
-if not DEBUG:
+if DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'templates/assets')
