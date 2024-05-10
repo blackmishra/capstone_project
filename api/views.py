@@ -34,10 +34,14 @@ class ResultsView(TemplateView):
         reader = csv.reader(f)
         data = list(reader)
 
+    with open('ratings.csv', newline='') as f:
+        reader = csv.reader(f)
+        ratings = list(reader)
+
     # data = list(data)
     # result = template.render(data=data)
     # data_html = data.to_html() 
-    extra_context = {'data': data[1:]}
+    extra_context = {'data': data[1:], 'ratings': ratings[1:]}
 
     # print(data)
     # context = {}

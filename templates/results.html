@@ -40,11 +40,11 @@
     
       
     <div class="container text-center">
-      <h1>BLEU Score Analysis</h1>
+      <h1>Objective Evaluation</h1>
       <br><br>
       
-      <table class="table">
-        <thead>
+      <table class="table table-bordered border-black">
+        <thead class="table-dark">
           <tr>
             <th scope="col">Model</th>
             <th scope="col">Conversion</th>
@@ -57,50 +57,55 @@
         </thead>
         <tbody>
           {% for row in data %}
+          {% if forloop.counter >= 7 %}
           <tr>
             {% for col in row %}
-            <td>{{ col }}</td>
-            
+              <td><strong>{{ col }}</strong></td>
             {% endfor %}
           </tr>
+          {% else %}
+            <tr>
+              {% for col in row %}
+              <td>{{ col }}</td>
+              
+              {% endfor %}
+            </tr>
+          {% endif %}
           {% endfor %}
         </tbody>
       </table>
     </div>
     <br><br><br><br>
     <div class="container text-center">
-      <h1>MOS Score Analysis</h1>
+      <h1>Subjective Evaluation</h1>
       <br><br>
       
-      <table class="table">
-        <thead>
+      <table class="table table-bordered border-black">
+        <thead class="table-dark">
           <tr>
+            <th scope="col">Model</th>
             <th scope="col">Conversion ID</th>
-            <th scope="col">AutoVC</th>
-            <th scope="col">StarGAN</th>
-            <th scope="col">kNN</th>
+            <th scope="col">Metric</th>
+            <th scope="col">Mean Score</th>
           </tr>
         </thead>
         <tbody>
+          {% for row in ratings %}
+          {% if forloop.counter|divisibleby:"3" %}
           <tr>
-            <th scope="row">p225xp226</th>
-            <td>71</td>
-            <td>75</td>
-            <td>75</td>
+            {% for col in row %}
+              <td><strong>{{ col }}</strong></td>
+            {% endfor %}
           </tr>
-          <tr>
-            <th scope="row">p225xp227</th>
-            <td>70</td>
-            <td>75</td>
-            <td>74</td>
-          </tr>
-          <tr>
-            <th scope="row">p228xp225</th>
-            <td >74</td>
-            <td>75</td>
-            <td>75</td>
-
-          </tr>
+          {% else %}
+            <tr>
+              {% for col in row %}
+              <td>{{ col }}</td>
+              
+              {% endfor %}
+            </tr>
+          {% endif %}
+          {% endfor %}
         </tbody>
       </table>
     </div>

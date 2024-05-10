@@ -11,6 +11,15 @@
       table {
           text-align: center;
       }
+      .txtcenter {
+        {% comment %} line-height: 200px;
+        height: 200px;
+        border: 3px solid green; {% endcomment %}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration-thickness: 15px;
+      }
   </style>
   </head>
 
@@ -48,16 +57,16 @@
     <br>
     <!-- #Heading -->
     <div class="row">
-      <div class="col">
+      <div class="col txtcenter" >
         Source<br><br>
       </div>
-      <div class="col">
+      <div class="col txtcenter" >
         Target <br><br>
       </div>
-      <div class="col">
+      <div class="col txtcenter" >
         Converted <br><br>
       </div>
-      <div class="col">
+      <div class="col txtcenter" >
         BLEU Score <br><br>
       </div>
 
@@ -65,8 +74,8 @@
 
     <!-- #First Row -->
     <div class="row">
-      <div class="col">
-        <table class="table align-middle">
+      <div class="col txtcenter" >
+        <table class="table align-middle"><thead class="table-dark">
           <tr>
             <td>Speaker ID: 225</td>
             
@@ -95,10 +104,10 @@
                   </div>
             </td>
           </tr>
-        </table>
+        </thead></table>
       </div>
-      <div class="col">
-        <table class="table align-middle">
+      <div class="col txtcenter" >
+        <table class="table align-middle"><thead class="table-dark">
           <tr>
             <td>Speaker ID: 226</td>
             
@@ -127,10 +136,10 @@
                   </div>
             </td>
           </tr>
-        </table>
+        </thead></table>
       </div>
-      <div class="col">
-        <table class="table align-middle">
+      <div class="col txtcenter" >
+        <table class="table align-middle"><thead class="table-dark">
           <tr>
             <td>Speaker ID: 225x226</td>
             
@@ -160,9 +169,9 @@
 
             </td>
           </tr>
-        </table>
+        </thead></table>
       </div>
-      <div class="col">
+      <div class="col txtcenter" >
         71 %
       </div>
 
@@ -170,8 +179,8 @@
 
     <!-- #Second Row -->
     <div class="row">
-      <div class="col">
-        <table class="table align-middle">
+      <div class="col txtcenter" >
+        <table class="table align-middle"><thead class="table-dark">
           <tr>
             <td>Speaker ID: 225</td>
             
@@ -200,10 +209,10 @@
                   </div>
             </td>
           </tr>
-        </table>
+        </thead></table>
       </div>
-      <div class="col">
-        <table class="table align-middle">
+      <div class="col txtcenter" >
+        <table class="table align-middle"><thead class="table-dark">
           <tr>
             <td>Speaker ID: 227</td>
             
@@ -232,10 +241,10 @@
                   </div>
             </td>
           </tr>
-        </table>
+        </thead></table>
       </div>
-      <div class="col">
-        <table class="table align-middle">
+      <div class="col txtcenter" >
+        <table class="table align-middle"><thead class="table-dark">
           <tr>
             <td>Speaker ID: 225x227</td>
             
@@ -265,17 +274,17 @@
 
             </td>
           </tr>
-        </table>
+        </thead></table>
       </div>
-      <div class="col">
+      <div class="col txtcenter" >
         70 %
       </div>
     </div>
 
     <!-- #Third Row -->
     <div class="row">
-      <div class="col">
-        <table class="table align-middle">
+      <div class="col txtcenter" >
+        <table class="table align-middle"><thead class="table-dark">
           <tr>
             <td>Speaker ID: 228</td>
             
@@ -304,10 +313,10 @@
                   </div>
             </td>
           </tr>
-        </table>
+        </thead></table>
       </div>
-      <div class="col">
-        <table class="table align-middle">
+      <div class="col txtcenter" >
+        <table class="table align-middle"><thead class="table-dark">
           <tr>
             <td>Speaker ID: 225</td>
             
@@ -336,10 +345,10 @@
                   </div>
             </td>
           </tr>
-        </table>
+        </thead></table>
       </div>
-      <div class="col">
-        <table class="table align-middle">
+      <div class="col txtcenter" >
+        <table class="table align-middle"><thead class="table-dark">
           <tr>
             <td>Speaker ID: 228x225</td>
             
@@ -369,9 +378,9 @@
 
             </td>
           </tr>
-        </table>
+        </thead></table>
       </div>
-      <div class="col">
+      <div class="col txtcenter" >
         74 %
       </div>
     </div>
