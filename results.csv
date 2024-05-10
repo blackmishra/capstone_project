@@ -1,0 +1,10 @@
+Model,Conversion,Text,BLEU,WER,Accuracy,Conversion Time
+AutoVC,p225xp226, Six spoons of fresh red leaves that can further fix the flat keyboard compared to a synagogue knife or,0.76,0.79,21.05,316
+AutoVC,p225xp227," Six scoons of fresh ladies, Folly figs, Sards and white cheese Is the place in your Senegal life for.",0.73,0.79,21.05,315
+AutoVC,p228xp225," Six planes of slush moon peas, five sticks of lettuce, and maybe a snack were available.",0.75,0.63,36.84,390
+kNN,p225xp226," six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob.",0.76,0.16,84.21,0.341
+kNN,p225xp227," six spoons of fresh snow peas, five thick slabs of blue cheese and maybe a stack for her brother Bob.",0.76,0.21,78.95,0.337
+kNN,p228xp225," six spoons of fresh snow peas, five thick slabs of blue cheese and maybe a snack for her brother Bob.",0.76,0.16,84.21,0.367
+StarGAN,225xp226," six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob.",0.76,0.16,84.21,1.411
+StarGAN,225xp227," six spoons of fresh snow peas, five thick slabs of blue cheese and maybe a snack for her brother Bob.",0.76,0.16,84.21,0.597
+StarGAN,228xp225," six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bolt.",0.76,0.21,78.95,0.897

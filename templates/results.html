@@ -37,7 +37,8 @@
   </nav>
 
     <br><br><br><br>
-
+    
+      
     <div class="container text-center">
       <h1>BLEU Score Analysis</h1>
       <br><br>
@@ -45,32 +46,24 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">Conversion ID</th>
-            <th scope="col">AutoVC</th>
-            <th scope="col">StarGAN</th>
-            <th scope="col">kNN</th>
+            <th scope="col">Model</th>
+            <th scope="col">Conversion</th>
+            <th scope="col">Text</th>
+            <th scope="col">BLEU</th>
+            <th scope="col">WER</th>
+            <th scope="col">Accuracy(%)</th>
+            <th scope="col">Conversion Time(s)</th>
           </tr>
         </thead>
         <tbody>
+          {% for row in data %}
           <tr>
-            <th scope="row">p225xp226</th>
-            <td>71</td>
-            <td>75</td>
-            <td>75</td>
+            {% for col in row %}
+            <td>{{ col }}</td>
+            
+            {% endfor %}
           </tr>
-          <tr>
-            <th scope="row">p225xp227</th>
-            <td>70</td>
-            <td>75</td>
-            <td>74</td>
-          </tr>
-          <tr>
-            <th scope="row">p228xp225</th>
-            <td >74</td>
-            <td>75</td>
-            <td>75</td>
-
-          </tr>
+          {% endfor %}
         </tbody>
       </table>
     </div>
